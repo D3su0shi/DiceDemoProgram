@@ -22,20 +22,14 @@ TestGetUniqueRolls(game);
 
 Console.WriteLine("\n--- Demo Complete ---\n");
 
-
-// --- Helper Methods (defined as local functions for the top-level program) ---
-
-/// <summary>
-/// Creates two Dice objects, rolls them 5 times, and compares the results.
-/// </summary>
 void TestDiceComparison()
 {
     Console.WriteLine("TEST 1: Rolling Two Dice (5 Rounds)");
-    
+
     // Create two dice objects: a standard 6-sided and a 10-sided.
-    Dice diceA = new Dice(6); 
-    Dice diceB = new Dice(10); 
-    
+    Dice diceA = new Dice(6);
+    Dice diceB = new Dice(10);
+
     Console.WriteLine($"Dice A: {diceA.NumberOfSides}-sided | Dice B: {diceB.NumberOfSides}-sided");
 
     int winsA = 0;
@@ -74,9 +68,6 @@ void TestDiceComparison()
     Console.WriteLine(overallWinner);
 }
 
-/// <summary>
-/// Tests the ContainsNumber utility method.
-/// </summary>
 void TestContainsNumber(DiceGame game)
 {
     Console.WriteLine("TEST 2: ContainsNumber Utility");
@@ -94,9 +85,6 @@ void TestContainsNumber(DiceGame game)
     Console.WriteLine($"\tDoes it contain {searchNumber2}? {found2}");
 }
 
-/// <summary>
-/// Tests the GetUniqueRolls utility method.
-/// </summary>
 void TestGetUniqueRolls(DiceGame game)
 {
     Console.WriteLine("TEST 3: GetUniqueRolls Utility");
